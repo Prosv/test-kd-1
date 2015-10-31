@@ -346,30 +346,338 @@
                     <div class="row">
                         <div class="col-md-6">
                             <h4>Info</h4>
+
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="inputID" class="col-md-5 control-label">ID/Name</label>
+
+                                    <div class="col-md-7">
+                                        <input type="email" class="form-control" id="inputID" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputState" class="col-md-5 control-label">State</label>
+
+                                    <div class="col-md-7">
+                                        <input type="email" class="form-control" id="inputState" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputAdvertiser" class="col-md-5 control-label">Advertiser</label>
+
+                                    <div class="col-md-7">
+                                        <input type="email" class="form-control" id="inputAdvertiser" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputRevenue1" class="col-md-5 control-label">Revenue</label>
+
+                                    <div class="col-md-7">
+                                        <input type="email" class="form-control" id="inputRevenue1" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="chooseRevenue2" class="col-md-5 control-label">Revenue</label>
+
+                                    <div class="col-md-7">
+                                        <select class="form-control" id="chooseRevenue2">
+                                            <option value="" disabled selected>Choose a revenue kind</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="chooseCategoties" class="col-md-5 control-label">Categoties</label>
+
+                                    <div class="col-md-7">
+                                        <select class="form-control" id="chooseCategoties">
+                                            <option value="" disabled selected>Choose a categories kind</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputCategoties" class="col-md-5 control-label">Categoties</label>
+
+                                    <div class="col-md-7">
+                                        <input type="email" class="form-control" id="inputCategoties" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputAdult" class="col-md-5 control-label">Adult</label>
+
+                                    <div class="col-md-7">
+                                        <input type="email" class="form-control" id="inputAdult" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="chooseAdult" class="col-md-5 control-label">Adult</label>
+
+                                    <div class="col-md-7">
+                                        <select class="form-control" id="chooseAdult">
+                                            <option value="" disabled selected>Adult</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                         <div class="col-md-6">
                             <h4>Additional info</h4>
+
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="inputTraffic" class="col-md-5 control-label">Allowed traffic
+                                        types</label>
+
+                                    <div class="col-md-7">
+                                        <input type="email" class="form-control" id="inputTraffic" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="chooseGender" class="col-md-5 control-label">Demographic
+                                        (gender)</label>
+
+                                    <div class="col-md-7">
+                                        <select class="form-control" id="chooseGender">
+                                            <option value="" disabled selected>Choose a gender</option>
+                                            <option>male</option>
+                                            <option>female</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputAge" class="col-md-5 control-label">Demographic (age)</label>
+
+                                    <div class="col-md-7">
+                                        <input type="email" class="form-control" id="inputAge" placeholder="">
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
                             <h4>Targeting</h4>
+
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="chooseCountries" class="col-md-5 control-label">Countries</label>
+
+                                    <div class="col-md-7">
+                                        <select class="form-control" id="chooseCountries">
+                                            <option value="" disabled selected></option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="chooseCarriers" class="col-md-5 control-label">Carriers</label>
+
+                                    <div class="col-md-7">
+                                        <select class="form-control" id="chooseCarriers">
+                                            <option value="" disabled selected></option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="chooseVers" class="col-md-5 control-label">Operating system and versions</label>
+
+                                    <div class="col-md-7">
+                                        <select class="form-control" id="chooseVers">
+                                            <option value="" disabled selected></option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="chooseDeviceTypes" class="col-md-5 control-label">Device types</label>
+
+                                    <div class="col-md-7">
+                                        <select class="form-control" id="chooseDeviceTypes">
+                                            <option value="" disabled selected></option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="chooseDeviceBrands" class="col-md-5 control-label">Device brands</label>
+
+                                    <div class="col-md-7">
+                                        <select class="form-control" id="chooseDeviceBrands">
+                                            <option value="" disabled selected></option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="chooseDeviceModels" class="col-md-5 control-label">Device Models</label>
+
+                                    <div class="col-md-7">
+                                        <select class="form-control" id="chooseDeviceModels">
+                                            <option value="" disabled selected></option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="chooseBrowsers" class="col-md-5 control-label">Browsers</label>
+
+                                    <div class="col-md-7">
+                                        <select class="form-control" id="chooseBrowsers">
+                                            <option value="" disabled selected></option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="chooseTerms" class="col-md-5 control-label">Terms and conditions</label>
+
+                                    <div class="col-md-7">
+                                        <select class="form-control" id="chooseTerms">
+                                            <option value="" disabled selected></option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                         <div class="col-md-6">
                             <h4>Access</h4>
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="choosePrivate" class="col-md-5 control-label">Private</label>
+
+                                    <div class="col-md-7">
+                                        <select class="form-control" id="choosePrivate">
+                                            <option value="" disabled selected>Private access</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="chooseApproval" class="col-md-5 control-label">Require approval</label>
+
+                                    <div class="col-md-7">
+                                        <select class="form-control" id="chooseApproval">
+                                            <option value="" disabled selected>Require approval</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="chooseTerms" class="col-md-5 control-label">Terms and conditions</label>
+
+                                    <div class="col-md-7">
+                                        <select class="form-control" id="chooseTerms">
+                                            <option value="" disabled selected>Terms of service</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
                             <h4>Tracking</h4>
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="inputDomain" class="col-md-5 control-label">Domain</label>
+
+                                    <div class="col-md-7">
+                                        <input type="email" class="form-control" id="inputDomain" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputRedirect" class="col-md-5 control-label">Redirect offer</label>
+
+                                    <div class="col-md-7">
+                                        <input type="email" class="form-control" id="inputRedirect" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="chooseMultiply" class="col-md-5 control-label">Multiply</label>
+
+                                    <div class="col-md-7">
+                                        <select class="form-control" id="chooseMultiply">
+                                            <option value="" disabled selected>Multiply conversions</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                         <div class="col-md-6">
                             <h4>Caps</h4>
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="chooseCap" class="col-md-5 control-label">Caps</label>
+
+                                    <div class="col-md-7">
+                                        <select class="form-control" id="chooseCap">
+                                            <option value="" disabled selected>Cap</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
                             <h4>Other</h4>
+                            <form class="form-horizontal">
+                            </form>
                         </div>
                     </div>
                 </div>
