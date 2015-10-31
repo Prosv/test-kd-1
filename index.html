@@ -1,1 +1,400 @@
-My Page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet"
+          href="bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css"/>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mm.js"></script>
+    <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
+    <script type="text/javascript"
+            src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">LOGO</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Link</a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+<div class="container-fluid">
+    <!--<div class="row">-->
+    <!--<div class="col-md-12">-->
+    <!--<div class="container">-->
+    <!--<div class="row">-->
+    <!--<div class='col-sm-6'>-->
+    <!--<input type='text' class="form-control" id='datetimepicker4' />-->
+    <!--</div>-->
+    <!--<script type="text/javascript">-->
+    <!--$(function () {-->
+    <!--$('#datetimepicker4').datetimepicker();-->
+    <!--});-->
+    <!--</script>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="row">-->
+    <!--<div class="col-md-12">.col-md-12</div>-->
+    <!--</div>-->
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <button id="toggle-all-info" class="btn btn-default btn-xs"><span>Info</span></button>
+                <button id="toggle-all-additional-info" class="btn btn-default btn-xs">Additional info</button>
+                <button id="toggle-all-targeting" class="btn btn-default btn-xs">Targeting</button>
+                <button id="toggle-all-access" class="btn btn-default btn-xs">Access</button>
+                <button id="toggle-all-tracking" class="btn btn-default btn-xs">Tracking</button>
+                <button id="toggle-all-caps" class="btn btn-default btn-xs">Caps</button>
+                <button id="toggle-all-stats" class="btn btn-default btn-xs">Stats</button>
+                <span class="pull-right clickable" data-toggle="collapse" data-target="#collapse1">
+                    <i class="glyphicon glyphicon-chevron-up"></i>
+                </span>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h4>Info</h4>
+
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" class="check-info">
+                                    ID
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" class="check-info">
+                                    Name
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" class="check-info">
+                                    Thumbnail
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" class="check-info">
+                                    State
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" class="check-info">
+                                    Preview URL
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" class="check-info">
+                                    Revenue
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" class="check-info">
+                                    Categories
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" class="check-info">
+                                    Adult
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <h4>Additional info</h4>
+
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" class="check-additional-info">
+                                    Allowed traffic types
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" class="check-additional-info">
+                                    Gender
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" class="check-additional-info">
+                                    Age
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" class="check-additional-info">
+                                    Full size
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <h4>Targeting</h4>
+
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" class="check-targeting">
+                                    Countries
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" class="check-targeting">
+                                    Carriers
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" class="check-targeting">
+                                    Operating systems and versions
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" class="check-targeting">
+                                    Device types
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" class="check-targeting">
+                                    Device brands
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" class="check-targeting">
+                                    Device models
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" class="check-targeting">
+                                    Browsers
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <h4>Access</h4>
+
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" class="check-access">
+                                    Private
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" class="check-access">
+                                    Require approval
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" class="check-access">
+                                    Terms and Conditions
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h4>Tracking</h4>
+
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" class="check-tracking">
+                                    Domain
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" class="check-tracking">
+                                    Redirect offer
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" class="check-tracking">
+                                    Multiple
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <h4>Caps</h4>
+
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" class="check-caps">
+                                    Caps
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" class="check-caps">
+                                    Remaining
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <h4>Stats</h4>
+
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" class="check-stats">
+                                    Clicks
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" class="check-stats">
+                                    Unique clicks
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" class="check-stats">
+                                    Conversions
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" class="check-stats">
+                                    Pub revenue
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" class="check-stats">
+                                    Total revenue
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" class="check-stats">
+                                    Profit
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" class="check-stats">
+                                    CPM
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h5>Filters</h5>
+                <span class="pull-right clickable" data-toggle="collapse" data-target="#collapse2">
+                    <i class="glyphicon glyphicon-chevron-up"></i>
+                </span>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>Info</h4>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Additional info</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>Targeting</h4>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Access</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>Tracking</h4>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Caps</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>Other</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h5>Report</h5>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class='col-sm-6'>
+                        <input type='text' class="form-control" id='datetimepicker4'/>
+                    </div>
+                    <script type="text/javascript">
+                        $(function () {
+                            $('#datetimepicker4').datetimepicker();
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
